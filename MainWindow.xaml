@@ -1,0 +1,21 @@
+﻿<Window x:Class="AppDirecteur_PPE3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppDirecteur_PPE3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="736.5" Width="1316">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1363*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBox_Direction_Ssdirection" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="428,51,0,0" TextWrapping="Wrap" Text="Direction et Sous-Direction" VerticalAlignment="Top" Width="467" FontWeight="Bold" FontSize="36" TextDecorations="{x:Null}"/>
+        <RadioButton x:Name="rdb_stat" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="485,226,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdb_theme_obstacles" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="505,314,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdb_avis" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="527,405,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_valider_p0" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="643,506,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>
