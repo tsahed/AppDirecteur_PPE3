@@ -38,7 +38,23 @@ namespace AppDirecteur_PPE3
 
         private void btn_valider_p0_Click(object sender, RoutedEventArgs e)
         {
+            if (rdb_stat.IsChecked == true)
+            {
+                Statistiques Stat = new Statistiques();
+                Stat.Show();
+            }
 
+            if (rdb_theme_obstacles.IsChecked == true)
+            {
+                Theme_Obstacle T_O = new Theme_Obstacle();
+                T_O.Show();
+            }
+
+            if (rdb_avis.IsChecked == true)
+            {
+                Avis avis = new Avis();
+                avis.Show();
+            }
         }
     }
 }
