@@ -24,5 +24,21 @@ namespace AppDirecteur_PPE3
         {
             InitializeComponent();
         }
+
+        private void btn_ToutFermer_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult mbr_confirmation;
+            mbr_confirmation = MessageBox.Show("Êtes-vous sur de vouloir quitter ?", "Fermeture", MessageBoxButton.YesNo);
+
+            if (mbr_confirmation == MessageBoxResult.Yes)
+            {
+                Close();
+            }
+        }
+
+        private void btn_valider_p0_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

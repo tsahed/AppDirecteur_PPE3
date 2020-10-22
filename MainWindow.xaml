@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppDirecteur_PPE3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="736.5" Width="1316">
+        Title="Accueil" Height="736.5" Width="1316">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="1363*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="TextBox_Direction_Ssdirection" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="428,51,0,0" TextWrapping="Wrap" Text="Direction et Sous-Direction" VerticalAlignment="Top" Width="467" FontWeight="Bold" FontSize="36" TextDecorations="{x:Null}"/>
-        <RadioButton x:Name="rdb_stat" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="485,226,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdb_theme_obstacles" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="505,314,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdb_avis" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" Margin="527,405,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_valider_p0" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="643,506,0,0" VerticalAlignment="Top" Width="76"/>
+        <RadioButton x:Name="rdb_stat" Content="Statistiques des salles" Grid.Column="1" HorizontalAlignment="Left" Margin="481,194,0,0" VerticalAlignment="Top" Height="32" Width="254" FontSize="24"/>
+        <RadioButton x:Name="rdb_theme_obstacles" Content="Thèmes et obstacles des salles" Grid.Column="1" HorizontalAlignment="Left" Margin="481,282,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <RadioButton x:Name="rdb_avis" Content="Avis clientèle" Grid.Column="1" HorizontalAlignment="Left" Margin="481,367,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="btn_valider_p0" Content="Valider" Grid.Column="1" HorizontalAlignment="Left" Margin="588,442,0,0" VerticalAlignment="Top" Width="125" FontSize="24" Click="btn_valider_p0_Click"/>
+        <Button x:Name="btn_ToutFermer" Content="Tout fermer" Grid.Column="1" HorizontalAlignment="Left" Margin="1152,0,0,0" VerticalAlignment="Top" Width="151" Height="36" FontSize="24" Background="#FFFF1010" Click="btn_ToutFermer_Click"/>
 
     </Grid>
 </Window>
