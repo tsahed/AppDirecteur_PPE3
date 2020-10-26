@@ -56,5 +56,15 @@ namespace AppDirecteur_PPE3
                 avis.Show();
             }
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult mbr_confirmation;
+            mbr_confirmation = MessageBox.Show("Êtes-vous sur de vouloir quitter ?", "Fermeture", MessageBoxButton.YesNo);
+            if (mbr_confirmation == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

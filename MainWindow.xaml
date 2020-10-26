@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppDirecteur_PPE3"
         mc:Ignorable="d"
-        Title="Accueil" Height="736.5" Width="1316">
+        Title="Accueil" Height="736.5" Width="1316" Closing="Window_Closing">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
