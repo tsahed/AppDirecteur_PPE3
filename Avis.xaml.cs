@@ -56,5 +56,27 @@ namespace AppDirecteur_PPE3
                 e.Cancel = true;
             }
         }
+
+        private void btn_valider_Click(object sender, RoutedEventArgs e)
+        {
+            lbl_choix_salle.Visibility = Visibility.Visible;
+            lbl_choix_theme.Visibility = Visibility.Visible;
+            cmb_choix_theme.Visibility = Visibility.Visible;
+            cmb_choix_salle.Visibility = Visibility.Visible;
+
+            if (cmb_choix_salle.SelectedIndex != -1 & cmb_choix_theme.SelectedIndex != -1)
+            {
+                lbl_avis.Visibility = Visibility.Visible;
+                lbl_moyenne.Visibility = Visibility.Visible;
+                lbl_avg_note.Visibility = Visibility.Visible;
+                list_avis.Visibility = Visibility.Visible;
+            }
+            
+            if (cmb_choix_salle.SelectedIndex == -1 | cmb_choix_theme.SelectedIndex == -1)
+            {
+                MessageBoxResult mbr_alerte;
+                mbr_alerte = MessageBox.Show("Sélectionner une salle ET un thème.", "Alerte", MessageBoxButton.OK);
+            }
+        }
     }
 }
