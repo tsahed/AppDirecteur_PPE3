@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Themes et obstacles" Height="474.15" Width="808" Closing="Window_Closing">
     <Grid>
-        
+       
         <Button x:Name="btn_avis_pTheme" Content="Avis" HorizontalAlignment="Left" Margin="191,0,0,0" VerticalAlignment="Top" Width="75" Background="#FFD8D8D8" Click="btn_avis_pTheme_Click"/>
         <Button x:Name="btn_theme_pTheme" Content="Thèmes et obstacles" HorizontalAlignment="Left" Margin="75,0,0,0" VerticalAlignment="Top" Width="116" Background="#FFF9F5F5" BorderBrush="#FFFDFDFD"/>
         <Button x:Name="btn_stat_pTheme" Content="Statistiques" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btn_stat_pTheme_Click"/>
